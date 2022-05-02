@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-02T13:32:24.211Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36" etag="M4wtXSYcOvig7F_1_9zR" version="17.5.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-05-02T13:33:18.607Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36" etag="GKfkz2-thHPkY9vgQA4d" version="17.5.0" type="github" pages="2">
   <diagram id="0ZyqWxrJW5GFuiIjHi68" name="ユースケース図">
     <mxGraphModel dx="1915" dy="1031" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -58,7 +58,7 @@
         <mxCell id="MhVf_jCD_kxbQj1jm9Yx-21" value="コントロール・コンポーネント" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=30;" parent="1" vertex="1">
           <mxGeometry x="1170" y="1090" width="440" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="MpUQyRx7v_O9LOxWRAyu-26" value="Test" style="swimlane; fontStyle = 0; childLayout = stackLayout; horizontal = 1; startSize = 30; horizontalStack = 0; resizeParent = 1; resizeParentMax = 0; resizeLast = 0; collapsible = 1; marginBottom = 0; swimlaneFillColor = default; " vertex="1" parent="1">
+        <mxCell id="MpUQyRx7v_O9LOxWRAyu-26" value="Test" style="swimlane; fontStyle = 0; childLayout = stackLayout; horizontal = 1; startSize = 30; horizontalStack = 0; resizeParent = 1; resizeParentMax = 0; resizeLast = 0; collapsible = 1; marginBottom = 0; swimlaneFillColor = default; ;swimlaneFillColor=default;" vertex="1" parent="1">
           <mxGeometry width="310" height="120" as="geometry" />
         </mxCell>
         <mxCell id="MpUQyRx7v_O9LOxWRAyu-27" value="ID" style="text; strokeColor = none; fillColor = none; align = left; verticalAlign = middle; spacingLeft = 4; spacingRight = 4; overflow = hidden; points =[[0, 0.5],[1,0.5]]; portConstraint = eastwest; rotatable = 0; " vertex="1" parent="MpUQyRx7v_O9LOxWRAyu-26">
