@@ -1,5 +1,6 @@
 import path from 'path';
 import { BrowserWindow, app, ipcMain, session } from 'electron';
+import {GetDate, GetStock} from './api'
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -33,7 +34,8 @@ const createWindow = () => {
   mainWindow.loadFile('dist/index.html');//windowに表示するhtmlを読み込む
 };
 
-
+ipcMain.handle("GetDate", GetDate);
+ipcMain.handle("GetStock", GetStock);
 
 //-----------------------------------------------------------------------------------------
 //■Windowの表示

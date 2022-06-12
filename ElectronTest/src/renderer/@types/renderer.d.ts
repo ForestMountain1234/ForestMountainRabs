@@ -1,5 +1,6 @@
 export interface IElectronAPI {
-    //preload.tsで公開したAPI名を記述
+    GetDate: () => Promise<any>
+    GetStock: () => Promise<any>
 }
 
 declare global {
