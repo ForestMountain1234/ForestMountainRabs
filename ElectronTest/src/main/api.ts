@@ -10,7 +10,6 @@ const CreateConfig = (databaseName: string) => {
             trustServerCertificate: true
         }
     }
-    
     return config;
 }
 
