@@ -5,7 +5,7 @@ const API = window.API;//使用するAPIは@typesで宣言し、API.api名で実
 export const App = () => {
   return (
     <div>
-      <p>Hello Electron React Typescript!!</p>
+      <p>Hello Electron React Typescript!</p>
     </div>
   );
 };
