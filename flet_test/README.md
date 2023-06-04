@@ -1,0 +1,1 @@
+![svg image](test.svg)
