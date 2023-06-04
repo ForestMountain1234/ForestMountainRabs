@@ -1,59 +1,35 @@
-import React, { useState } from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
+import React, { useEffect, useState } from 'react';
 
 const API = window.API;//使用するAPIは@typesで宣言し、API.api名で実行する
-type stockRow = {
-  ID: number,
-  Stock: number,
-  Item: string
-}
 
 
 //アプリケーション本体
 export const App = () => {
-  const [text, setText] = useState();
-  const [stockData, setStockData] = useState<Array<stockRow>>(); 
+  console.log("レンダリング")
 
-  const date = () => {
-    API.GetDate().then((val) => setText(val));
-  }
-
-  const stock = () => {
-    API.GetStock().then((val) => {
-      console.log(val);
-      setStockData(val.recordset)
-    });
-  }
+  let [count, setCount] = useState(0);
 
   return (
     <div>
-      <p>{text}</p>
-      <button type="button" onClick={date}>GetDate!</button>
-      <button type="button" onClick={stock}>GetStock!</button>
-
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell>ID</TableCell>
-            <TableCell>Stock</TableCell>
-            <TableCell>Item</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {stockData !== undefined? stockData.map((row) => (
-            <TableRow key={row.ID}>
-              <TableCell >{row.ID}</TableCell>
-              <TableCell>{row.Stock}</TableCell>
-              <TableCell>{row.Item}</TableCell>
-            </TableRow>
-          )): null} 
-        </TableBody>
-      </Table>
-
+      {count}
+      <button type="button" onClick={() => setCount(count + 1)}>click</button>
+      <Test/>
     </div>
   );
 };
+
+const Test = () => {
+  let [count, setCount] = useState(0);
+  let [count2, setCount2] = useState(0);
+  
+  useEffect(() => { console.log("useEffect発火")},[count2])
+
+  return (
+    <div>
+      {count}
+      <button type="button" onClick = {() => setCount(count + 1)}>click</button>
+      {count2}
+      <button type="button" onClick = {() => setCount2(count2 + 1)}>click</button>
+    </div>
+  );
+}

@@ -1,6 +1,4 @@
 export interface IElectronAPI {
-    GetDate: () => Promise<any>
-    GetStock: () => Promise<any>
 }
 
 declare global {
